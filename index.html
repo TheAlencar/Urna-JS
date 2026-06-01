@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Urna Eletrônica</h2>
+
+        <div class="painel-botoes">
+            <div class="card-candidato">
+                <h3>Candidato 1</h3>
+                <button id="btn-cand1" class="btn btn-cand1">Votar 1</button>
+            </div>
+
+            <div class="card-candidato">
+                <h3>Candidato 2</h3>
+                <button id="btn-cand2" class="btn btn-cand2">Votar 2</button>
+            </div>
+        </div>
+
+        <hr class="divisor">
+
+        <div class="resultado-container">
+            <h3>Resultado Parcial</h3>
+            <p>Total de votos: <strong id="total-votos">0</strong></p>
+
+            <div class="metrica">
+                <div class="info-metrica">
+                    <span>Candidato 1: <span id="votos-cand1">0</span> votos</span>
+                    <span id="porcent-cand1">0%</span>
+                </div>
+                <div class="barra-bg">
+                    <div id="barra-cand1" class="barra-fill fill-cand1" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <div class="metrica">
+                <div class="info-metrica">
+                    <span>Candidato 2: <span id="votos-cand2">0</span> votos</span>
+                    <span id="porcent-cand2">0%</span>
+                </div>
+                <div class="barra-bg">
+                    <div id="barra-cand2" class="barra-fill fill-cand2" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <button id="btn-reset" class="btn-reset" style="display: none;">Reiniciar Votação</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
